@@ -60,6 +60,7 @@ public class WhatsappRepository {
         String groupName = users.get(1).getName();
         Group personalGroup = new Group(groupName, 2);
         groupUserMap.put(personalGroup, users);
+        adminMap.put(personalGroup,users.get(0));
         return personalGroup;
     }
 
